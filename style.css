@@ -1,0 +1,72 @@
+/* the snake game  */
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("background\ 2.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#scorebox{
+    position: absolute;
+    top: 40px;
+    right: 91px;
+    font-size: 40px;
+    font-weight: bold;
+    color :antiquewhite
+}
+#hiscorebox{
+    position: absolute;
+    top:95px ;
+    right: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color :goldenrod
+
+}
+.welcome{
+    position: absolute;
+    top: 40px;
+    left: 8px;
+    font-size: 43px;
+    font-style: italic;
+    color: rgb(186, 194, 194);
+    font-weight: bold;
+}
+.owner{
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+    font-style: italic;
+    color: white;
+    font-size:40px ;
+}
+#board{
+    width: 119vh;
+    height: 91vh;
+    background: linear-gradient(45deg, #5b8baf, #9e82a2);
+    border: 8px solid rgb(39, 31, 31);
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background-color:rgb(138, 138, 33);
+    border-radius: 10px;
+    border: rgba(97, 10, 97, 0.139);
+}
+.food{
+    background:  rgb(87, 3, 87);
+    border:  solid rgb(4, 88, 54);
+    border-radius: 10px;
+}
+.snake{
+    background-color: rgba(255, 0, 60, 0.292);
+    border:  solid black;
+    border-radius: 8px;
+}
